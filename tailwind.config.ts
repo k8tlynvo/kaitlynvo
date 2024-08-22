@@ -7,12 +7,20 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+    now: ["Now", "sans-serif"]
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "page": "neutral-100",
+        "default-text": "neutral-950",
+        "outline": "neutral-800",
+      }
     },
   },
   plugins: [],
