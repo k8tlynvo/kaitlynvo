@@ -1,4 +1,3 @@
-import Name from "../public/svgs/name.svg"
 import Image from 'next/image';
 import { cardData } from "@/data/projectCardsData";
 import Card from "./(components)/Card";
@@ -13,7 +12,7 @@ export default function Home() {
       <div className="flex-col h-fit py-40 mb-10 w-[70%] sm:w-[70%] md:w-[70%] lg:w-[50%] xl:w-[50%]">
         <div className="flex items-center">
           <div className="text-lg text-default-text">Hi! My name is</div>
-          <Image src={Name} alt="Image of text: Kaitlyn Vo" width={200} height={200}/>
+          <Image src={"/kaitlynvo/svgs/name.svg"} alt="Image of text: Kaitlyn Vo" width={200} height={200}/>
         </div>
         <div className="text-lg text-sub-text">
           I&apos;m a developer and student at the University of California, Davis! &#127803;
