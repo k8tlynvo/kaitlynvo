@@ -1,38 +1,41 @@
-import NavBar from "./(components)/NavBar";
-import Header from "./(components)/Header";
+import Name from "../public/svgs/name.svg"
+import Image from 'next/image';
+import { cardData } from "@/data/projectCardsData";
+import Card from "./(components)/Card";
 
 export default function Home() {
   
   return (
-    <div className="flex-col border-2 w-11/12 min-h-[95dvh] mt-5 mx-auto bg-white items-center justify-center">
-      <Header />
-      <div className="flex space-between pl-20 border-2 border-black">
-        {/* main content */}
-        <div className="flex-1 border-2 h-fit">
-          {/* name section */}
-          <div className="flex-col h-fit p-32">
-            {/* text + handwriting */}
-            <div className="flex items-center">
-              <div className="text-lg">Hi! My name is</div> 
-              <div className="">Kaitlyn Vo</div>
-            </div>
-            <div className="text-md text-gray-500">developer. student.</div>
-          </div>
-          {/* boxes, do a grid situation  */}
-          <div className="grid grid-cols-2 gap-4 border-2">
-            <div className="border-2 h-96 w-full">
-              box1
-            </div>
-            <div className="border-2 h-96 w-full">
-              box2
-            </div>
-          </div>
-          
-        </div>
-        <NavBar />
+    // center body
+    <div className="flex-1 max-w-[80rem] justify-center">
 
+      {/* name and intro */}
+      <div className="flex-col h-fit py-40 mb-10 w-[70%] sm:w-[70%] md:w-[70%] lg:w-[50%] xl:w-[50%]">
+        <div className="flex items-center">
+          <div className="text-lg text-default-text">Hi! My name is</div>
+          <Image src={Name} alt="Image of text: Kaitlyn Vo" width={200} height={200}/>
+        </div>
+        <div className="text-lg text-sub-text">
+          I'm a developer and student at the University of California, Davis! &#127803;
+          I'm passionate about contributing to impactful products and I'm currently an application developer at 
+          <span className="text-accent-text font-bold"> Centene Corporation</span>.
+        </div>
+      </div>
+
+      {/* project cards */}
+      <div className="flex min-w-full justify-center">
+        <div className="flex mt-20 grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 min-w-full">
+          {cardData.map(card => (
+            <Card
+              key={card.id}
+              imageUrl={card.imageUrl}
+              title={card.title}
+              description={card.description}
+              link={card.link}
+            />
+          ))}
+        </div>
       </div>
     </div>
-    
   );
 }

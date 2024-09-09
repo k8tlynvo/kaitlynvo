@@ -7,10 +7,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-    now: ["Now", "sans-serif"]
-    },
     extend: {
+      fontFamily : {
+        sans: ["var(--font-outfit)", "sans-serif"]
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -18,8 +18,9 @@ const config: Config = {
       },
       colors: {
         "page": "neutral-100",
-        "default-text": "neutral-950",
-        "outline": "neutral-800",
+        "default-text": "#1c1917",
+        "sub-text": "#78716c",
+        "accent-text": "#be185d"
       }
     },
   },
