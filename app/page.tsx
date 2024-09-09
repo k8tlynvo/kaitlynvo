@@ -16,8 +16,8 @@ export default function Home() {
           <Image src={Name} alt="Image of text: Kaitlyn Vo" width={200} height={200}/>
         </div>
         <div className="text-lg text-sub-text">
-          I'm a developer and student at the University of California, Davis! &#127803;
-          I'm passionate about contributing to impactful products and I'm currently an application developer at 
+          I&apos;m a developer and student at the University of California, Davis! &#127803;
+          I&apos;m passionate about contributing to impactful products and I&apos;m currently an application developer at 
           <span className="text-accent-text font-bold"> Centene Corporation</span>.
         </div>
       </div>
