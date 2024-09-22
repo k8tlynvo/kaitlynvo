@@ -21,6 +21,30 @@ const config: Config = {
         "default-text": "#1c1917",
         "sub-text": "#78716c",
         "accent-text": "#be185d"
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        slideInFromLeft: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        fadeInFromLeft: {
+          '0%': { opacity: '0', transform: 'translateX(-10%)' }, // Adjust as needed
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        fadeInFromBottom: {
+          '0%': { opacity: '0', transform: 'translateY(10%)' }, // Adjust as needed
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 1s ease-out",
+        slideInFromLeft: 'slideInFromLeft 1s ease-out',
+        fadeInFromLeft: 'fadeInFromLeft 1s ease-out',
+        fadeInFromBottom: 'fadeInFromBottom 1s ease-out',
       }
     },
   },

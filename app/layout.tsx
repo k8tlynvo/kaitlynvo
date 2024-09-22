@@ -24,8 +24,8 @@ export default function RootLayout({
     <html lang="en" className={outfit.variable}>
       <body>
         <div className="flex flex-col h-screen max-h-screen">
-          <div className="flex-grow overflow-y-auto text-default-text bg-[#fce7f3]">
-            <div className="flex bg-gradient-to-b from-neutral-50 from-20% justify-between px-10 py-16 m-4">
+          <div className="flex-grow overflow-y-auto text-default-text bg-[#F0D7E4]">
+            <div className="flex bg-gradient-to-b from-neutral-50 from-10% justify-between px-10 py-16 m-4">
               <Header />
               {children}
               <NavBar />

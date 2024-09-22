@@ -16,7 +16,7 @@ const Card = (props: CardProps) => {
             target='_blank'
             rel='noopener noreferrer'
         >
-            <div className='bg-white h-92 rounded-lg overflow-hidden transition-transform duration-300 hover:scale-95 hover:shadow-lg hover:shadow-pink-200'>
+            <div className='bg-white h-96 rounded-lg overflow-hidden transition-transform duration-300 hover:scale-95 hover:shadow-lg hover:shadow-pink-300'>
                 <div className='relative w-full h-72'>
                     <Image 
                         src={imageUrl}  
@@ -25,7 +25,7 @@ const Card = (props: CardProps) => {
                         style={{objectFit: "cover", objectPosition: "top" }}
                     />
                 </div>
-                <div className='p-4'>
+                <div className='p-4 flex-1'>
                     <div className='text-default-text'>{title}</div>
                     <div className='text-sub-text'>{description}</div>
                 </div>  
