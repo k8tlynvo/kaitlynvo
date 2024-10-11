@@ -9,7 +9,7 @@ const NavBar = () => {
                 </Link>
             </div>
             <div className='transition duration-300 hover:text-pink-300 hover:underline hover:decoration-pink-200'>
-                <a href='/pdfs/resume.pdf' target='_blank' rel='noopener noreferrer'>
+                <a href='/pdfs/public_resume.pdf' target='_blank' rel='noopener noreferrer'>
                     Resume 
                 </a>
             </div>
