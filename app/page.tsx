@@ -61,7 +61,7 @@ export default function Home() {
       )}
       {/* project cards */}
       <div className={`flex w-full justify-center transform transition-opacity duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-        <div className="flex mt-52 grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 min-w-full">
+        <div className="mt-52 grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 min-w-full">
           {cardData.map(card => (
             <Card
               key={card.id}
